@@ -1,5 +1,13 @@
-
+// Add more
+addButton = document.getElementById("add")
 const fileInput = document.getElementById('fileInput');
+
+addButton.addEventListener("click", () => {
+    fileInput.classList.toggle("hidden")
+})
+
+// Slideshow Section
+
 const slideshow = document.getElementById('slideshow');
 let images = [];
 let index = 0;

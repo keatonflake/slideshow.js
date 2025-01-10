@@ -2,6 +2,10 @@ body{
     background-color: black;
 }
 
+.hidden{
+    display: none;
+}
+
 #slideshow{
     display: flex;
     justify-content: center;
