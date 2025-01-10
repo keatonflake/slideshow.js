@@ -30,5 +30,5 @@ index = 0; // Reset index
 imgElement.src = images[index];
 index = (index + 1) % images.length;
 
-setTimeout(startSlideshow, 6000);
+setTimeout(startSlideshow, 600);
       }
