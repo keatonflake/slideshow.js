@@ -15,7 +15,7 @@ body{
 }
 
 img {
-    width: 70vw;
+    max-height: 80vh;
 }
 
 #add {
