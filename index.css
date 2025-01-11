@@ -17,10 +17,16 @@ img {
     width: 70vw;
 }
 
+#add {
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
 #fileInput {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 3;
+    left: 3;
     z-index: 1000;
     background-color: transparent;
     border: 1px solid white;
@@ -28,7 +34,6 @@ img {
     color: white;
     cursor: pointer;
     padding: 5px;
-    margin: 1em;
 }
 
 #fileInput:focus {
