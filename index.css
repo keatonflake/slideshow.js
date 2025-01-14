@@ -1,21 +1,16 @@
-body{
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: black;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-#slideshow{
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-
-img {
-    max-height: 80vh;
+header{
+    position: sticky;
 }
 
 #add {
@@ -24,13 +19,11 @@ img {
     background-color: transparent;
     color: white;
     font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 10px; 
 }
 
 #fileInput {
-    position: fixed;
-    top: 3;
-    left: 3;
-    z-index: 1000;
     background-color: transparent;
     border: 1px solid white;
     border-radius: 10px;
@@ -45,18 +38,30 @@ img {
 
 #fileInput::file-selector-button {
     border-radius: 4px;
-    padding: 5px 10px; /* Adjust padding for consistency */
+    padding: 5px 10px;
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid white; /* Ensure button border is white */
+    border: 1px solid white;
     color: white;
     transition: background-color 200ms;
 }
 
 #fileInput::file-selector-button:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 #fileInput::file-selector-button:active {
-    background-color: rgba(255, 255, 255, 0.2); /* Active state effect */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#slideshow {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+img {
+    max-height: 98vh;
 }
