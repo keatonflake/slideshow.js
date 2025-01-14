@@ -1,68 +1,73 @@
 html, body {
     margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: black;
-    width: 100%;
-    z-index: 1000;
-}
-
-.hidden {
-    display: none;
-}
-
-header{
-    position: sticky;
-}
-
-#add {
-    border: 1px solid white;
-    border-radius: 25%;
-    background-color: transparent;
-    color: white;
-    font-size: 1.5em;
-    cursor: pointer;
-    margin-right: 10px; 
-}
-
-#fileInput {
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
-}
-
-#fileInput:focus {
-    outline: none;
-}
-
-#fileInput::file-selector-button {
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    transition: background-color 200ms;
-}
-
-#fileInput::file-selector-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-#fileInput::file-selector-button:active {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-#slideshow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-
-img {
-    max-height: 98vh;
-}
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     background-color: black;
+     z-index: 1000;
+ }
+ 
+ .hidden {
+     display: none;
+ }
+ 
+ header{
+     position: sticky;
+ }
+ 
+ #add {
+     position: fixed;
+     border: 1px solid white;
+     border-radius: 25%;
+     background-color: transparent;
+     color: white;
+     font-size: 1.5em;
+     cursor: pointer;
+     margin-right: 10px; 
+ }
+ 
+ #fileInput {
+     position: fixed;
+     margin-left: 3em;
+     background-color: transparent;
+     border: 1px solid white;
+     border-radius: 10px;
+     color: white;
+     cursor: pointer;
+ }
+ 
+ #fileInput:focus {
+     outline: none;
+ }
+ 
+ #fileInput::file-selector-button {
+     border-radius: 4px;
+     padding: 5px 10px;
+     cursor: pointer;
+     background-color: white;
+     border: none;
+     color: black;
+     transition: background-color 200ms;
+ }
+ 
+ #fileInput::file-selector-button:hover {
+     color: black;
+      background-color: gray;
+ }
+ 
+ #fileInput::file-selector-button:active {
+      color: black;
+      background-color: gray;
+ }
+ 
+ #slideshow {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+ }
+ 
+ img {
+     max-height: 98vh;
+ }
+ 
