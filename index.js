@@ -1,33 +1,40 @@
-const addButton = document.getElementById("add");
-const fileInput = document.getElementById("fileInput");
+// Add more
+const addButton = document.getElementById("add")
+const fileInput = document.getElementById('fileInput');
 
 addButton.addEventListener("click", () => {
-    fileInput.classList.toggle("hidden");
-});
+    fileInput.classList.toggle("hidden")
+})
 
-const slideshow = document.getElementById("slideshow");
+// Slideshow Section
+
+const slideshow = document.getElementById('slideshow');
 let images = [];
 let index = 0;
 
-fileInput.addEventListener("change", (event) => {
-    images = Array.from(event.target.files).map((file) => URL.createObjectURL(file));
-    index = 0;
-    if (images.length > 0) {
-        startSlideshow();
-    }
-});
+fileInput.addEventListener('change', (event) => {
+images = Array.from(event.target.files).map(file => {
+    return URL.createObjectURL(file);
+ });
+  
+index = 0;
+          if (images.length > 0) {
+              startSlideshow();
+          }
+      });
 
-function startSlideshow() {
-    if (images.length === 0) return;
+      function startSlideshow() {
+          if (images.length === 0) return;
 
-    let imgElement = slideshow.querySelector("img");
-    if (!imgElement) {
-        imgElement = document.createElement("img");
-        slideshow.appendChild(imgElement);
-    }
+          // Create img element if it doesn't exist
+          let imgElement = slideshow.querySelector('img');
+          if (!imgElement) {
+              imgElement = document.createElement('img');
+              slideshow.appendChild(imgElement);
+          }
 
-    imgElement.src = images[index];
-    index = (index + 1) % images.length;
+imgElement.src = images[index];
+index = (index + 1) % images.length;
 
-    setTimeout(startSlideshow, 6000);
-}
+setTimeout(startSlideshow, 6000);
+      }
